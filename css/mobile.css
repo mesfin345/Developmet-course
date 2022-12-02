@@ -4,7 +4,7 @@
   position: absolute;
   top: 20px;
   left: 25px;
-  background: url('../images/icons/hamburger-menu.svg') no-repeat;
+  background: url("../images/icons/hamburger-menu.svg") no-repeat;
   background-size: cover;
   background-position: center;
   cursor: pointer;
@@ -13,7 +13,7 @@
 
 .toggle-icon.active {
   position: fixed;
-  background: url('../images/icons/cross-2.svg') no-repeat;
+  background: url("../images/icons/cross-2.svg") no-repeat;
   background-size: 80%;
   background-position: center;
   width: 38px;
@@ -43,7 +43,10 @@
 .primary-menu {
   align-self: stretch;
   padding-left: 15vw;
-  margin-top: 20px;
+}
+
+.primary-menu a img {
+  display: none;
 }
 
 .primary-menu ul,
@@ -64,6 +67,7 @@
 .secondary-menu {
   align-self: stretch;
   border-bottom: 1px solid var(--black-2);
+  display: none;
 }
 
 .secondary-menu ul {
@@ -113,7 +117,7 @@ footer p {
   margin-top: 40px;
   font-size: 16px;
   cursor: pointer;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   justify-self: center;
 }
 
